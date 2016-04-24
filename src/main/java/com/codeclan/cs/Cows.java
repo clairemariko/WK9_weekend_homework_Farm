@@ -1,9 +1,9 @@
 package com.codeclan.cs;
 
-import com.codeclan.md.Edible;
-import com.codeclan.md.FoodSource;
 
-public class Cows extends FarmAnimals {
+
+
+public class Cows extends FarmAnimals implements AnimalFood{
 	
 	
 		private String type;

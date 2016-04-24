@@ -27,4 +27,11 @@ public class CowTest {
 		System.out.println(cow);
 	}
 	
+	@Test public void testCowCanEat(){
+		Cows cowOne = new Cows();
+		Corn cornOne = new Corn();
+		cowOne.eat(cornOne);
+		assertEquals(cornOne, cowOne.stomach.get(0));
+	}
+	
 }
