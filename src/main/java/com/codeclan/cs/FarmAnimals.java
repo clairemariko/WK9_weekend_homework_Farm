@@ -14,14 +14,14 @@ public class FarmAnimals {
 	
 	
 	public FarmAnimals(){
-		stomach = new ArrayList<Food>();
+		stomach = new ArrayList<Food>(5);
 	}
 	
 	protected FarmAnimals(AnimalSound sound){
 		this.sound = sound;
 	}
 	
-	public animalCall(){
+	public String animalCall(){
 		return sound.makeSound();
 	}
 
