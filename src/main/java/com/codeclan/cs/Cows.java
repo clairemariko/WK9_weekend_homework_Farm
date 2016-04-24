@@ -7,6 +7,7 @@ public class Cows extends FarmAnimals {
 		private int price;
 		
 	public Cows(){
+		super(new CowSound());
 		type = "highland";
 		price = 250;
 		

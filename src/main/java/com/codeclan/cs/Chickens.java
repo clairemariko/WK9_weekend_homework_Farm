@@ -1,5 +1,8 @@
 package com.codeclan.cs;
 
-public class Chickens {
+public class Chickens extends FarmAnimals{
+	
+	private String type;
+	private int price;
 
 }

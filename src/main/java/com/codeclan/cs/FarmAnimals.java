@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class FarmAnimals {
 
+	protected AnimalSound sound;
 	protected String type;
 	protected int price;
 	protected ArrayList<Food> stomach;
@@ -14,6 +15,14 @@ public class FarmAnimals {
 	
 	public FarmAnimals(){
 		stomach = new ArrayList<Food>();
+	}
+	
+	protected FarmAnimals(AnimalSound sound){
+		this.sound = sound;
+	}
+	
+	public animalCall(){
+		return sound.makeSound();
 	}
 
 
