@@ -1,0 +1,20 @@
+Notes from homework
+
+-Design choice, intitally set up an individual cow, chicken and pig. however now that I have progressed further I realised they should
+have all been under one class animal. 
+-Things I discovered:
+-Exception has its own class built into Java so that why you can extend to it and it knows exactly where to extend to even
+though you have not set up that class
+
+-You can write ...extends...implements in the one line
+
+-The main difference between and abstract class and an interface is that an interface is a must for all classes to do.
+For example all animals have the ability 'to eat' there and interface force upon them this action that they all can do.
+an abstract class is different in the sense it layout the blueprint for your classes, and hence when you inherit 
+attributes, these attributes can be assigned to different values. 
+
+-Exceptions and when to use them. It is a handle for the high chance of an input being made that will crash your 
+programme. For example if your method needed to have i.e a car to pass through inorder to run but that car does not exist.
+Instead of the programme not knowing what to do with situation it will go through specific steps to handle this error.
+
+
