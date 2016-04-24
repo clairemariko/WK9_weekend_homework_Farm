@@ -10,11 +10,11 @@ public class FarmAnimals {
 	protected AnimalSound sound;
 	protected String type;
 	protected int price;
-	protected ArrayList<Food> stomach;
+	protected ArrayList<AnimalFood> stomach;
 	
 	
 	public FarmAnimals(){
-		stomach = new ArrayList<Food>(5);
+		stomach = new ArrayList<AnimalFood>(5);
 	}
 	
 	protected FarmAnimals(AnimalSound sound){
