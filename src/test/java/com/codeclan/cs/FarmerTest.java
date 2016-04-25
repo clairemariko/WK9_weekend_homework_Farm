@@ -13,14 +13,16 @@ public class FarmerTest {
 	//set up the enviroment
 	@Before
 	public void setup(){
-		FarmAnimals animal = new Cows("highland", 500);
+		FarmAnimals animal = new Cows();
+		String type = "Highland";
+		int price = 500;
 		Farmer farmer = new Farmer();
 		
 	}
 	
 	@Test
 	public void farmerBuyAnimal(){
-		FarmAnimals animal1 = new Cows("highland", 500);
+		FarmAnimals animal1 = new Cows();
 		Farmer farmer1 = new Farmer();
 		farmer1.buy(animal1);
 		assertEquals(animal1, farmer1.animalStock.get(0));	
@@ -28,7 +30,7 @@ public class FarmerTest {
 	
 	@Test
 	public void farmerSellAnimal(){
-		FarmAnimals animal1 = new Cows("highland", 5000);
+		FarmAnimals animal1 = new Cows();
 		Farmer farmer1 = new Farmer();
 		farmer1.buy(animal1);
 		assertTrue(farmer1.getanimalStock().size()==1);
@@ -50,7 +52,7 @@ public class FarmerTest {
 	
 	@Test(expected = AnimalNotFoundException.class)
 	public void testhasBoughtUnsuccessful() throws AnimalNotFoundException {
-		FarmAnimals animal2 = new Cows("Bull", 50);
+		FarmAnimals animal2 = new Cows();
 		Farmer farmer = new Farmer();
 		
 		
