@@ -26,7 +26,8 @@ public class Farmer {
 		 return animalStock.remove(animal);
 	 }
 	 
-	 public boolean bought(FarmAnimals animal) throws AnimalNotFoundExcpetion{
+	 public boolean bought(FarmAnimals animal) throws AnimalNotFoundException{
+		return false;
 		 
 	 }
 	 
@@ -34,4 +35,4 @@ public class Farmer {
 	 
 	 
 
-}
+

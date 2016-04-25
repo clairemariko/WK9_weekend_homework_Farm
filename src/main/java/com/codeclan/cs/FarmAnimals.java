@@ -45,9 +45,9 @@ public class FarmAnimals {
 		this.price = price;
 	}
 	
-public ArrayList<Food> getStomach() {
+public ArrayList<AnimalFood> getStomach() {
 		
-		return (ArrayList<Food>) stomach.clone();
+		return (ArrayList<AnimalFood>) stomach.clone();
 	}
 	
 }
